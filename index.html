@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+body {
+  background: #ccc;
+}
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+.container {
+  width: 480px;
+  margin: auto;
+}
+button {
+  padding: 10px 15px;
+  width: 70px;
+}
+</style>
+</head>
+<body onload="startGame()">
+  <div class="container">
+    <canvas id="myCanvas" width="480" height="270"></canvas>
+    <div style="text-align: center">
+      <button onmousedown="moveLeft()" ontouchstart="moveLeft()">Left</button>
+      <button onmousedown="moveRight()"  ontouchstart="moveRight()">Right</button><br>
+      <button onmouseup="clearMove()">Pause</button>
+      <button onmouseup="startAgain()">Start</button>
+    </div>
+    <p><b>INSTRUCTIONS:</b> <br>
+      Press <b>Left</b> Button => for moving left  <br>
+      Press <b>Right</b> Button => for moving Right <br>
+      Press <b>Pause</b> Button => to stop moving <br>
+      Press <b>Resume</b> Button => to start moving<br>
+      <i>or use arrow keys for moving objects</i>
+    </p>
+  </div>
+  
+<script src="./gameWorking.js"></script>
+</body>
+</html>
